@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <label for="totalLoan">Total Loan Amount in Rs.</label>
+        <input type="number" id="totalLoan" name="totalLoan" value="" required />
+
+        <button id="calculateEmi" onclick="calculateEmi()">Calculate EMI</button>
+        <button id="reset" onclick="reset()">Reset</button>
+        
+        <div class="radio">
+        <input type="radio" name="installments" id="one-year" value="12" checked/>
+        <label for="one-year">1 Year</label>
+        <input type="radio" name="installments" id="two-year" value="24" />
+        <label for="two-year">2 Year</label>
+        <input type="radio" name="installments" id="three-year" value="36" />
+        <label for="three-year">3 Year</label>
+        <input type="radio" name="installments" id="four-year" value="48" />
+        <label for="four-year">4 Year</label>
+        <input type="radio" name="installments" id="five-year" value="60" />
+        <label for="five-year">5 Year</label>
+        </div>
+        <div id="output"></div>
+    </div> 
+</body>
+<script src="script.js"></script>
+</html>
